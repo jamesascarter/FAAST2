@@ -1,57 +1,26 @@
-This challenge requires me to to create a Tube System that will have the following functions:
+# FAAST
 
-There will be a number of trains in the system
+This challenge set by Makers Academy requires me to to create a Tube System that will have the following functions:
 
-Trains will travel from station to station
+>There will be a number of trains in the system
 
-Inside of a station, when the train stops. Passengers will alightand enter the carriages of the train.
+>Trains will travel from station to station
 
-A passenger will touch in and touch out at the station.
+>Inside of a station, when the train stops. Passengers will alight and enter the carriages of the train.
 
-Each coach of the train will hold upto 40 passengers
+>A passenger will touch in and touch out at the station.
 
-Each train is made of a number of coaches.
+>Each coach of the train will hold upto 40 passengers.
 
+>Each train is made of a number of coaches.
 
-I have mapped out this project in the following manner using CRC.
+>A passenger can only travel with at least £2 in credit.
 
-					Station
+### Tech
 
-Functions:
-
-To allow trains to arrive and depart.
-
-To allow passengers to arrive and depart station.
-
-Interactions: Passengers, Trains.
-
-					Trains
-
-Functions:
-
-Move from station to station.
-
-Carry 3 coaches.
-
-Interactions:
-
-Station and coaches
-
-					Coaches
-
-Functions:
-
-Have a capacity of 40
-Hold passengers
-Allow passengers to enter the coach.
-
-Interactions: Passengers, train, station.
-
-					Passengers
-
-Functions: Touch in and out at the station
-Interactions: Station and coaches
-
+* Ruby - Object-orientated language
+* Rspec - Testing
+* Dillinger - Markdown Editor
 
 
 
