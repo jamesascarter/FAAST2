@@ -1,5 +1,4 @@
 require 'coach'
-require 'station'
 
 describe Coach do
 
@@ -12,6 +11,12 @@ describe Coach do
 		expect(coach.capacity).to eq(40)
 	end
 
+	it 'should allow passenger to enter the coach' do
+		allow(station).to receive(:leave)
+		coach.embark(passenger,station)
+		expect(coach.passenger_count).to eq(1)
+	end
+
 	it "should know when it is full" do
 		allow(station).to receive(:leave)
 		40.times{coach.embark(passenger,station)}
@@ -22,5 +27,9 @@ describe Coach do
 		allow(station).to receive(:leave)
 		40.times {coach.embark(passenger,station)}
 		expect(lambda{coach.embark(passenger,station)}).to raise_error("sorry the coach is full")
+	end
+
+	it "should allow passengers to leave a coach" do
+		
 	end
 end

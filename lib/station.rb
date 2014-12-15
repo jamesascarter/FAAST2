@@ -30,4 +30,8 @@ class Station
 	def depart(train)
 		@trains.delete(train)
 	end
+
+	def train_here?(train)
+		@trains.include?(train)
+	end
 end
