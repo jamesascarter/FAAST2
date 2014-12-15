@@ -13,6 +13,7 @@ describe Coach do
 	end
 
 	it "should know when it is full" do
+		allow(station).to receive(:leave)
 		40.times{coach.embark(passenger,station)}
 		expect(coach.full?).to eq(true)
 	end	
