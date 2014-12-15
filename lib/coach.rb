@@ -22,4 +22,9 @@ class Coach
 	def full?
 		passenger_count == DEFAULT_CAPACITY
 	end
+
+	def alight(passenger,station)
+		@passengers.delete(passenger)
+		station.enter(passenger)
+	end
 end

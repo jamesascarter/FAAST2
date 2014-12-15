@@ -10,4 +10,5 @@ describe Train do
 		expect(train.coaches.length).to eq(3)
 	end
 
+
 end

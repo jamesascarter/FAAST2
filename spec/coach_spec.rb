@@ -4,7 +4,7 @@ describe Coach do
 
 	let(:coach) {Coach.new}
 	let(:passenger) {double :passenger}
-	let(:station) {double :station, :leave => nil}	
+	let(:station) {double :station, :leave => nil, :enter => nil}	
 
 
 	it "should have a default capacity of 40" do
@@ -27,6 +27,7 @@ describe Coach do
 	end
 
 	it "should allow passengers to leave a coach" do
-
+		coach.embark(passenger,station)
+		expect{coach.alight(passenger,station)}.to change{coach.passenger_count}.by -1
 	end
 end
