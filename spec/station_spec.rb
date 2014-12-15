@@ -32,7 +32,6 @@ describe Station do
 
 	it "should only allow passengers to enter if they have >£2 credit" do
 		expect(lambda{station.enter(passenger1)}).to raise_error("sorry, you do not have enough credit to enter the station")
-
 	end
 
 end	
