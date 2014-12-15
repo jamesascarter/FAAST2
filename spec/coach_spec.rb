@@ -16,5 +16,9 @@ describe Coach do
 		allow(station).to receive(:leave)
 		40.times{coach.embark(passenger,station)}
 		expect(coach.full?).to eq(true)
-	end	
+	end
+		
+	it "should return an error when the coach is full" do
+
+	end
 end
