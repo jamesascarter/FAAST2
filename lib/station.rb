@@ -8,6 +8,7 @@ class Station
 	end
 
 	def enter(passenger)
+		raise "sorry, you do not have enough credit to enter the station" if passenger.dollar < 2
 		@passengers << passenger
 	end	
 
