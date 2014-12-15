@@ -9,12 +9,17 @@ class Coach
 		@passengers = []
 	end	
 
+	def passenger_count
+		@passengers.count
+	end
+
 	def embark(passenger,station)
+		raise "sorry the coach is full" if full?
 		@passengers << passenger
 		station.leave(passenger)
 	end	
 
 	def full?
-		@capacity == DEFAULT_CAPACITY
-	end	
+		passenger_count == DEFAULT_CAPACITY
+	end
 end
