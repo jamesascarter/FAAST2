@@ -57,6 +57,8 @@ Once these have been created you can then use the methods specified in my code t
 
 * Ensure that passengers can only enter a train when it is present at the stationld. make a checker method that ensures train is at the station.
 
+* Make use of a module in order to make the code cleaner. Encapsulate common methods in this module and then require it in the relevant class files. 
+
 
 
 
