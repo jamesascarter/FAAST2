@@ -49,7 +49,13 @@ $ irb
     > james = Passenger.new
 ```
 
-Once these have been created you can then use the methods specified in my code to allow passenegr to topup travel credit, enter/leave stations and embark/alight trains. The passengers can also move from station to station of which you can create as many as you want.
+Once these have been created you can then use the methods specified in my code to allow passenger to topup travel credit, enter/leave stations and embark/alight trains. The passengers can also move from station to station of which you can create as many as you want.
+
+### Improvements
+
+* When passengers enter and leave the train I should iterate over the coaches in order to block remove them all. When dealing with lots of passengers it will make it much more efficient rather than removing one-by-one.
+
+* Ensure that passengers can only enter a train when it is present at the stationld. make a checker method that ensures train is at the station.
 
 
 
