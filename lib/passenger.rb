@@ -10,7 +10,7 @@ class Passenger
 		@dollar += amount
 	end
 
-	def touch_in(station)
+	def touch_in()
 		@dollar -= 1
 	end
 
